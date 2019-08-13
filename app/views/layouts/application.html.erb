@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>美容院まどんな</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="top-container">
+        <a  href="/"><img class="rogo" src="/rogo-tp.png" alt="美容室まどんな"></a>
+        <ul class="menus">
+          <a class="menu" href="/price">PRICE</a>
+          <a class="menu" href="menu.html">メニュー</a>
+          <a class="menu" href="/access">アクセス</a>
+          <a class="menu book">ご予約</a>
+        </ul>
+      </div>
+      <!--the modal-->
+      <div id="myModal" class="modal">
+
+        <!--Modal content-->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="login-form">
+            <form class="box" action="reserve.html" method="post">
+              <h1>お客様の情報を入力してください。</h1>
+              <input type="text" name="volume" placeholder="お名前">
+              <input type="text" name="surface" placeholder="コースメニュー">
+              <input type="submit" value="予約する">
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <%= yield %>
+    <footer>
+      <div class="bottom-container">
+        <a  href="/"><img class="rogo" src="/rogo-tp.png" alt="美容室まどんな"></a>
+        <div class="snses">
+            <a class="sns fab fa-instagram" target="_blank" href="https://www.instagram.com/madonna_sugi/?hl=ja"></a>
+            <a class="sns fab fa-facebook-square" target="_blank" href="https://www.facebook.com/madonna.138/"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

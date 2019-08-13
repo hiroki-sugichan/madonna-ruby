@@ -1,0 +1,90 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.parallax {
+  background-image: url("/night-bg.jpg");
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body{
+  margin:0;
+  padding:0;
+}
+#catchy{
+  width:100%;
+  display:none;
+  padding-top:350px;
+  color:white;
+  text-align: center;
+  font-size:calc(10px + 1vh);
+}
+/*ここまでパララックス*/
+.course-intro{
+  width:100%;
+  height:auto;
+}
+.introduce{
+  text-align: center;
+  color:rgb(43, 43, 43);
+}
+.introduce h3{
+  line-height: 35px;
+}
+.bg-holder{
+  height:360px;
+}
+.on{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.place-image{
+  position:relative;
+  background-position:center center;
+  background-image: url("/nice-bg.jpg");
+  height:100%;
+  width:100%;
+  border-radius: 100px;
+  background-size: cover;
+}
+.intro-sentence span{
+  color:rgba(186, 58, 58, 1);
+}
+.intro-sentence{
+  font-size: calc(10px+2vmin);
+  line-height: 35px;
+}
+.btn-wrapper{
+  height: 70px;
+  width:100%;
+}
+.btn{
+  margin: 20px auto;
+  width:140px;
+  font-size:20px;
+  padding:10px 20px;
+  background-color: rgb(71, 71, 71);
+  color:white;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.btn:hover{
+  margin: 20px auto;
+  width:140px;
+  font-size:20px;
+  padding:10px 60px;
+  background-color: rgb(83, 126, 255);
+  color: black;
+  border-radius: 30px;
+  box-shadow: 0px 4px rgb(55, 84, 172);
+}
+.btn:active{
+  box-shadow: none;
+  position: relative;
+  top:4px;
+}
+/*ここまでメイン*/
